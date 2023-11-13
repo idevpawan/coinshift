@@ -1,13 +1,7 @@
 import { FC } from "react";
 import { ITxnInfo } from "./types";
 
-const TxnInfo: FC<ITxnInfo> = ({
-  amount,
-  fiat,
-  token,
-  networkFee,
-  unitPrice,
-}) => {
+const TxnInfo: FC<ITxnInfo> = ({ amount, networkFee, unitPrice }) => {
   return (
     <div className="rounded-lg text-[#494257] text-sm bg-gray p-4">
       <p className="font-semibold text-lg">Transaction summary</p>
